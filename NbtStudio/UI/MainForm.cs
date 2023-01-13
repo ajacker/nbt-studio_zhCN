@@ -48,41 +48,41 @@ namespace NbtStudio.UI
         private readonly string[] ClickedFiles;
 
         private readonly DualItemCollection ItemCollection;
-        private readonly DualMenuItem ActionNew = new DualMenuItem("&New", "New File", IconType.NewFile, Keys.Control | Keys.N);
-        private readonly DualMenuItem ActionNewClipboard = DualMenuItem.SingleMenuItem("New from &Clipboard", IconType.Paste, Keys.Control | Keys.Alt | Keys.V);
-        private readonly DualMenuItem ActionNewRegion = DualMenuItem.SingleMenuItem("New &Region File", IconType.Region, Keys.Control | Keys.Alt | Keys.R);
-        private readonly DualMenuItem ActionOpenFile = new DualMenuItem("&Open File", "Open File", IconType.OpenFile, Keys.Control | Keys.O);
-        private readonly DualMenuItem ActionOpenFolder = new DualMenuItem("Open &Folder", "Open Folder", IconType.OpenFolder, Keys.Control | Keys.Shift | Keys.O);
-        private readonly DualMenuItem ActionSave = new DualMenuItem("&Save", "Save", IconType.Save, Keys.Control | Keys.S);
-        private readonly DualMenuItem ActionSaveAs = DualMenuItem.SingleMenuItem("Save &As", IconType.Save, Keys.Control | Keys.Shift | Keys.S);
-        private readonly DualMenuItem DropDownRecent = DualMenuItem.SingleMenuItem("&Recent...", null, Keys.None);
-        private readonly DualMenuItem DropDownImport = DualMenuItem.SingleMenuItem("&Import...", null, Keys.None);
-        private readonly DualMenuItem ActionImportFile = DualMenuItem.SingleMenuItem("&File", IconType.OpenFile, Keys.Control | Keys.I);
-        private readonly DualMenuItem ActionImportFolder = DualMenuItem.SingleMenuItem("F&older", IconType.OpenFolder, Keys.Control | Keys.Shift | Keys.I);
-        private readonly DualMenuItem ActionImportNew = DualMenuItem.SingleMenuItem("&New File", IconType.NewFile, Keys.Control | Keys.Alt | Keys.N);
-        private readonly DualMenuItem ActionImportNewRegion = DualMenuItem.SingleMenuItem("New &Region File", IconType.Region, Keys.None);
-        private readonly DualMenuItem ActionImportClipboard = DualMenuItem.SingleMenuItem("From &Clipboard", IconType.Paste, Keys.Control | Keys.Alt | Keys.I);
-        private readonly DualMenuItem ActionSort = DualMenuItem.SingleButton("Sort", IconType.Sort);
-        private readonly DualMenuItem ActionRefresh = DualMenuItem.SingleButton("Refresh", IconType.Refresh);
-        private readonly DualMenuItem ActionUndo = DualMenuItem.SingleMenuItem("&Undo", IconType.Undo, Keys.Control | Keys.Z);
-        private readonly DualMenuItem ActionRedo = DualMenuItem.SingleMenuItem("&Redo", IconType.Redo, Keys.Control | Keys.Shift | Keys.Z);
-        private readonly DualMenuItem ActionCut = new DualMenuItem("Cu&t", "Cut", IconType.Cut, Keys.Control | Keys.X);
-        private readonly DualMenuItem ActionCopy = new DualMenuItem("&Copy", "Copy", IconType.Copy, Keys.Control | Keys.C);
-        private readonly DualMenuItem ActionPaste = new DualMenuItem("&Paste", "Paste", IconType.Paste, Keys.Control | Keys.V);
-        private readonly DualMenuItem ActionRename = new DualMenuItem("Re&name", "Rename", IconType.Rename, Keys.F2);
-        private readonly DualMenuItem ActionEdit = new DualMenuItem("&Edit Value", "Edit", IconType.Edit, Keys.Control | Keys.E);
-        private readonly DualMenuItem ActionEditSnbt = new DualMenuItem("Edit as &SNBT", "Edit as SNBT", IconType.EditSnbt, Keys.Control | Keys.Shift | Keys.E);
-        private readonly DualMenuItem ActionDelete = new DualMenuItem("&Delete", "Delete", IconType.Delete, Keys.Delete);
-        private readonly DualMenuItem DropDownUndoHistory = DualMenuItem.SingleMenuItem("Undo History...", IconType.Undo, Keys.None);
-        private readonly DualMenuItem DropDownRedoHistory = DualMenuItem.SingleMenuItem("Redo History...", IconType.Redo, Keys.None);
-        private readonly DualMenuItem ActionClearUndoHistory = DualMenuItem.SingleMenuItem("Clear Undo History", null, Keys.None);
-        private readonly DualMenuItem ActionFind = new DualMenuItem("&Find", "Find", IconType.Search, Keys.Control | Keys.F);
-        private readonly DualMenuItem ActionAbout = DualMenuItem.SingleMenuItem("&About", IconType.NbtStudio, Keys.Shift | Keys.F1);
-        private readonly DualMenuItem ActionChangeIcons = DualMenuItem.SingleMenuItem("&Change Icons", IconType.Refresh, Keys.Control | Keys.I);
-        private readonly DualMenuItem ActionAddSnbt = DualMenuItem.SingleButton("Add as SNBT", IconType.AddSnbt);
-        private readonly DualMenuItem ActionAddChunk = DualMenuItem.SingleButton("Add Chunk", IconType.Chunk);
-        private readonly DualMenuItem ActionUpdate = DualMenuItem.SingleMenuItem("&Update", null, Keys.None);
-        private readonly DualMenuItem ActionCheckUpdates = DualMenuItem.SingleMenuItem("Check for &Updates", null, Keys.Control | Keys.U);
+        private readonly DualMenuItem ActionNew = new DualMenuItem("新建", "新建文件", IconType.NewFile, Keys.Control | Keys.N);
+        private readonly DualMenuItem ActionNewClipboard = DualMenuItem.SingleMenuItem("从剪切板新建", IconType.Paste, Keys.Control | Keys.Alt | Keys.V);
+        private readonly DualMenuItem ActionNewRegion = DualMenuItem.SingleMenuItem("新建区域文件", IconType.Region, Keys.Control | Keys.Alt | Keys.R);
+        private readonly DualMenuItem ActionOpenFile = new DualMenuItem("打开文件", "打开文件", IconType.OpenFile, Keys.Control | Keys.O);
+        private readonly DualMenuItem ActionOpenFolder = new DualMenuItem("打开文件夹", "打开文件夹", IconType.OpenFolder, Keys.Control | Keys.Shift | Keys.O);
+        private readonly DualMenuItem ActionSave = new DualMenuItem("保存", "保存", IconType.Save, Keys.Control | Keys.S);
+        private readonly DualMenuItem ActionSaveAs = DualMenuItem.SingleMenuItem("另存为", IconType.Save, Keys.Control | Keys.Shift | Keys.S);
+        private readonly DualMenuItem DropDownRecent = DualMenuItem.SingleMenuItem("最近...", null, Keys.None);
+        private readonly DualMenuItem DropDownImport = DualMenuItem.SingleMenuItem("导入...", null, Keys.None);
+        private readonly DualMenuItem ActionImportFile = DualMenuItem.SingleMenuItem("文件", IconType.OpenFile, Keys.Control | Keys.I);
+        private readonly DualMenuItem ActionImportFolder = DualMenuItem.SingleMenuItem("文件夹", IconType.OpenFolder, Keys.Control | Keys.Shift | Keys.I);
+        private readonly DualMenuItem ActionImportNew = DualMenuItem.SingleMenuItem("新建文件", IconType.NewFile, Keys.Control | Keys.Alt | Keys.N);
+        private readonly DualMenuItem ActionImportNewRegion = DualMenuItem.SingleMenuItem("新建区域文件", IconType.Region, Keys.None);
+        private readonly DualMenuItem ActionImportClipboard = DualMenuItem.SingleMenuItem("来自剪切板", IconType.Paste, Keys.Control | Keys.Alt | Keys.I);
+        private readonly DualMenuItem ActionSort = DualMenuItem.SingleButton("排序", IconType.Sort);
+        private readonly DualMenuItem ActionRefresh = DualMenuItem.SingleButton("刷新", IconType.Refresh);
+        private readonly DualMenuItem ActionUndo = DualMenuItem.SingleMenuItem("撤销", IconType.Undo, Keys.Control | Keys.Z);
+        private readonly DualMenuItem ActionRedo = DualMenuItem.SingleMenuItem("重做", IconType.Redo, Keys.Control | Keys.Shift | Keys.Z);
+        private readonly DualMenuItem ActionCut = new DualMenuItem("剪切", "剪切", IconType.Cut, Keys.Control | Keys.X);
+        private readonly DualMenuItem ActionCopy = new DualMenuItem("复制", "复制", IconType.Copy, Keys.Control | Keys.C);
+        private readonly DualMenuItem ActionPaste = new DualMenuItem("粘贴", "粘贴", IconType.Paste, Keys.Control | Keys.V);
+        private readonly DualMenuItem ActionRename = new DualMenuItem("重命名", "重命名", IconType.Rename, Keys.F2);
+        private readonly DualMenuItem ActionEdit = new DualMenuItem("编辑值", "编辑", IconType.Edit, Keys.Control | Keys.E);
+        private readonly DualMenuItem ActionEditSnbt = new DualMenuItem("以 SNBT 格式编辑", "以 SNBT 格式编辑", IconType.EditSnbt, Keys.Control | Keys.Shift | Keys.E);
+        private readonly DualMenuItem ActionDelete = new DualMenuItem("删除", "删除", IconType.Delete, Keys.Delete);
+        private readonly DualMenuItem DropDownUndoHistory = DualMenuItem.SingleMenuItem("撤销记录...", IconType.Undo, Keys.None);
+        private readonly DualMenuItem DropDownRedoHistory = DualMenuItem.SingleMenuItem("重做记录...", IconType.Redo, Keys.None);
+        private readonly DualMenuItem ActionClearUndoHistory = DualMenuItem.SingleMenuItem("清除撤销记录", null, Keys.None);
+        private readonly DualMenuItem ActionFind = new DualMenuItem("查找", "查找", IconType.Search, Keys.Control | Keys.F);
+        private readonly DualMenuItem ActionAbout = DualMenuItem.SingleMenuItem("关于", IconType.NbtStudio, Keys.Shift | Keys.F1);
+        private readonly DualMenuItem ActionChangeIcons = DualMenuItem.SingleMenuItem("更换图标", IconType.Refresh, Keys.Control | Keys.I);
+        private readonly DualMenuItem ActionAddSnbt = DualMenuItem.SingleButton("以 SBNT 格式添加", IconType.AddSnbt);
+        private readonly DualMenuItem ActionAddChunk = DualMenuItem.SingleButton("添加区块", IconType.Chunk);
+        private readonly DualMenuItem ActionUpdate = DualMenuItem.SingleMenuItem("更新", null, Keys.None);
+        private readonly DualMenuItem ActionCheckUpdates = DualMenuItem.SingleMenuItem("检查更新", null, Keys.Control | Keys.U);
         public MainForm(string[] args)
         {
             ClickedFiles = args;
@@ -240,10 +240,10 @@ namespace NbtStudio.UI
             {
                 if (x.Status == TaskStatus.Faulted)
                 {
-                    var window = new ExceptionWindow("Update check failed",
-                        "Failed to check for updates.",
+                    var window = new ExceptionWindow("检查更新失败",
+                        "无法检查更新",
                         FailableFactory.Failure(x.Exception, "Check for updates"),
-                        "Would you like to go to the update page?\n" +
+                        "你想要前往更新页面吗?\n\n\n（下载到的是原版软件哦）\n\n" +
                         "https://github.com/tryashtar/nbt-studio/releases",
                         ExceptionWindowButtons.OKCancel
                     );
@@ -255,10 +255,10 @@ namespace NbtStudio.UI
                 {
                     if (x.Result is null)
                     {
-                        if (MessageBox.Show("You already seem to have the latest update.\n" +
-                            "Would you like to go to the update page?\n\n" +
+                        if (MessageBox.Show("当前版本已经是最新的了\n" +
+                            "你想要前往更新页面吗?\n\n\n（下载到的是原版软件哦）\n\n" +
                             "https://github.com/tryashtar/nbt-studio/releases",
-                            "No update found", MessageBoxButtons.OKCancel) == DialogResult.OK)
+                            "未发现新版本", MessageBoxButtons.OKCancel) == DialogResult.OK)
                             IOUtils.OpenUrlInBrowser("https://github.com/tryashtar/nbt-studio/releases");
                     }
                     else
@@ -291,7 +291,7 @@ namespace NbtStudio.UI
 
         private void New()
         {
-            if (!ConfirmIfUnsaved("Create a new file anyway?"))
+            if (!ConfirmIfUnsaved("依然创建新文件吗？"))
                 return;
             OpenFile(new NbtFile(), skip_confirm: true);
         }
@@ -303,7 +303,7 @@ namespace NbtStudio.UI
 
         private void NewRegion()
         {
-            if (!ConfirmIfUnsaved("Create a new file anyway?"))
+            if (!ConfirmIfUnsaved("依然创建新文件吗？"))
                 return;
             OpenFile(RegionFile.EmptyRegion(), skip_confirm: true);
         }
@@ -334,7 +334,7 @@ namespace NbtStudio.UI
                     else
                     {
                         var error = FailableFactory.Aggregate(attempt1, attempt2);
-                        var window = new ExceptionWindow("Clipboard error", "Failed to parse SNBT from clipboard.", error);
+                        var window = new ExceptionWindow("Clipboard error", "无法从剪切板解析 SNBT.", error);
                         window.ShowDialog(this);
                     }
                 }
@@ -368,7 +368,7 @@ namespace NbtStudio.UI
         {
             using (var dialog = new OpenFileDialog
             {
-                Title = "Select NBT files",
+                Title = "选择 NBT 文件",
                 RestoreDirectory = true,
                 Multiselect = true,
                 Filter = NbtUtil.OpenFilter()
@@ -383,7 +383,7 @@ namespace NbtStudio.UI
         {
             using (var dialog = new CommonOpenFileDialog
             {
-                Title = "Select a folder that contains NBT files",
+                Title = "选择含有 NBT 文件的文件夹",
                 RestoreDirectory = true,
                 Multiselect = false,
                 IsFolderPicker = true
@@ -396,14 +396,14 @@ namespace NbtStudio.UI
 
         private void OpenFile()
         {
-            if (!ConfirmIfUnsaved("Open a new file anyway?"))
+            if (!ConfirmIfUnsaved("依然打开新文件吗？"))
                 return;
             BrowseFileLike(x => OpenFiles(x, skip_confirm: true));
         }
 
         private void OpenFile(ISaveable file, bool skip_confirm = false)
         {
-            if (!skip_confirm && !ConfirmIfUnsaved("Open a new file anyway?"))
+            if (!skip_confirm && !ConfirmIfUnsaved("依然打开新文件吗？"))
                 return;
             ViewModel = new NbtTreeModel(file);
         }
@@ -420,7 +420,7 @@ namespace NbtStudio.UI
 
         private void OpenFolder()
         {
-            if (!ConfirmIfUnsaved("Open a new folder anyway?"))
+            if (!ConfirmIfUnsaved("依然打开新文件吗？"))
                 return;
             BrowseFolderLike(x => OpenFolder(x, skip_confirm: true));
         }
@@ -433,7 +433,7 @@ namespace NbtStudio.UI
         private void Discard(IEnumerable<INode> nodes)
         {
             var unsaved = nodes.Filter(x => x.Get<ISaveable>()).Where(x => x.HasUnsavedChanges);
-            if (!unsaved.Any() || MessageBox.Show($"You currently have unsaved changes.\n\nAre you sure you would like to discard the changes to these files?", "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (!unsaved.Any() || MessageBox.Show($"当前仍有未保存的更改\n\n确定要忽略对这些文件的更改吗？", "未保存的更改", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 ViewModel.RemoveMany(nodes);
         }
 
@@ -441,7 +441,7 @@ namespace NbtStudio.UI
         {
             items = items.Where(x => x.CanRefresh);
             var unsaved = items.OfType<ISaveable>().Where(x => x.HasUnsavedChanges);
-            if (!unsaved.Any() || MessageBox.Show($"You currently have unsaved changes.\n\nAre you sure you would like to discard the changes to these files?", "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+            if (!unsaved.Any() || MessageBox.Show($"当前仍有未保存的更改\n\n确定要忽略对这些文件的更改吗？", "未保存的更改", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
                 UndoHistory.StartBatchOperation();
                 var errors = new List<(IHavePath item, Exception exception)>();
@@ -456,11 +456,11 @@ namespace NbtStudio.UI
                         errors.Add((item as IHavePath, ex));
                     }
                 }
-                UndoHistory.FinishBatchOperation(new DescriptionHolder("Refresh {0}", items.ToArray()), true);
+                UndoHistory.FinishBatchOperation(new DescriptionHolder("刷新 {0}", items.ToArray()), true);
                 if (errors.Any())
                 {
                     var error = FailableFactory.AggregateFailure(errors.Select(x => x.exception).ToArray());
-                    string message = $"{StringUtils.Pluralize(errors.Count(), "file")} failed to refresh:\n\n";
+                    string message = $"{StringUtils.Pluralize(errors.Count(), "file")} 无法刷新:\n\n";
                     message += String.Join("\n", errors.Select(x => x.item).Where(x => x is not null).Select(x => Path.GetFileName(x.Path)));
                     var window = new ExceptionWindow("Refresh error", message, error);
                     window.ShowDialog(this);
@@ -506,7 +506,7 @@ namespace NbtStudio.UI
                 path = has_path.Path;
             using var dialog = new SaveFileDialog
             {
-                Title = path is null ? "Save NBT file" : $"Save {Path.GetFileName(path)} as...",
+                Title = path is null ? "保存 NBT 文件" : $"将 {Path.GetFileName(path)} 另存为...",
                 RestoreDirectory = true,
                 FileName = path,
                 Filter = NbtUtil.SaveFilter(path, NbtUtil.GetFileType(file))
@@ -550,7 +550,7 @@ namespace NbtStudio.UI
             if (obj is null || !obj.CanSort) return;
             UndoHistory.StartBatchOperation();
             obj.Sort();
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Sort {0}", obj), true);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("排序 {0}", obj), true);
         }
 
         private void RefreshAll()
@@ -617,7 +617,7 @@ namespace NbtStudio.UI
                     window.ShowDialog(this);
                 }
             }
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Paste {0} into {1}", results, node), true);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("将 {0} 粘贴到 {1}", results, node), true);
         }
 
         private void Rename()
@@ -642,14 +642,14 @@ namespace NbtStudio.UI
         {
             UndoHistory.StartBatchOperation();
             var changed = BulkEditWindow.BulkRename(IconSource, tags);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Bulk rename {0}", changed), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("数组重命名 {0}", changed), false);
         }
 
         private void BulkEdit(IEnumerable<NbtTag> tags)
         {
             UndoHistory.StartBatchOperation();
             var changed = BulkEditWindow.BulkEdit(IconSource, tags);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Bulk edit {0}", changed), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("数组重命名 {0}", changed), false);
         }
 
         private void EditLike(INode node, Predicate<INode> check, Action<NbtTag> when_tag)
@@ -666,7 +666,7 @@ namespace NbtStudio.UI
                 EditChunk(chunk);
             else if (tag is not null)
                 when_tag(tag);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Edit {0}", node), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("编辑 {0}", node), false);
         }
 
         private void Rename(INode node)
@@ -703,7 +703,7 @@ namespace NbtStudio.UI
             // likewise
             UndoHistory.StartBatchOperation();
             EditTagWindow.ModifyTag(IconSource, tag, EditPurpose.Rename);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Rename {0}", tag), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("重命名 {0}", tag), false);
         }
 
         private void EditSnbt()
@@ -712,7 +712,7 @@ namespace NbtStudio.UI
             if (tag is null) return;
             UndoHistory.StartBatchOperation();
             EditSnbtWindow.ModifyTag(IconSource, tag, EditPurpose.EditValue);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Edit {0} as SNBT", tag), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("以 SNBT 格式编辑 {0}", tag), false);
         }
 
         private void Delete()
@@ -747,14 +747,14 @@ namespace NbtStudio.UI
                     var file = files.Single();
                     if (file.Path is null)
                         result = MessageBox.Show(
-                            $"Are you sure you want to remove this item?",
-                            $"Really delete this unsaved file?",
+                            $"确定要移除此项？",
+                            $"确认删除此未保存的文件？",
                             MessageBoxButtons.YesNo);
                     else
                         result = MessageBox.Show(
-                            $"Are you sure you want to delete this item?\n\n" +
-                            $"It will be sent to the recycle bin. This cannot be undone.",
-                            $"Really delete {file_nodes.Single().Description}?",
+                            $"确认删除此项？\n\n" +
+                            $"文件将被移动到回收站，此操作不可撤销",
+                            $"确定要删除 {file_nodes.Single().Description}?",
                             MessageBoxButtons.YesNo);
                 }
                 else
@@ -763,14 +763,14 @@ namespace NbtStudio.UI
                     var saved = files.Where(x => x.Path is not null);
                     if (!saved.Any())
                         result = MessageBox.Show(
-                            $"Are you sure you want to remove {ExtractNodeOperations.Description(file_nodes)}?",
-                            $"Really delete these items?",
+                            $"确定要移除 {ExtractNodeOperations.Description(file_nodes)}?",
+                            $"确定要删除这些项?",
                             MessageBoxButtons.YesNo);
                     else
                         result = MessageBox.Show(
-                            $"Are you sure you want to delete {ExtractNodeOperations.Description(file_nodes)}?\n\n" +
-                            $"{StringUtils.Pluralize(saved.Count(), "item")} will be send to the recycle bin. This cannot be undone.",
-                            $"Really delete these items?",
+                            $"确定要删除 {ExtractNodeOperations.Description(file_nodes)}?\n\n" +
+                            $"{StringUtils.Pluralize(saved.Count(), "item")} 将被移动到回收站，此操作不可撤销",
+                            $"确定要删除这些项？",
                             MessageBoxButtons.YesNo);
                 }
                 if (result != DialogResult.Yes)
@@ -789,10 +789,10 @@ namespace NbtStudio.UI
             if (relevant.Any())
             {
                 var error = FailableFactory.AggregateFailure(relevant);
-                var window = new ExceptionWindow("Error while deleting", "An error occurred while deleting:", error);
+                var window = new ExceptionWindow("删除时出现错误", "删除时发生错误:", error);
                 window.ShowDialog(this);
             }
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Delete {0}", nodes), false);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("删除 {0}", nodes), false);
         }
 
         private FindWindow FindWindow;
@@ -888,7 +888,7 @@ namespace NbtStudio.UI
             foreach (var type in NbtUtil.NormalTagTypes())
             {
                 var button = DualMenuItem.SingleButton(
-                    hover: $"Add {NbtUtil.TagTypeName(type)} Tag",
+                    hover: $"添加{NbtUtil.TagTypeName(type)}标签",
                     icon: NbtUtil.TagIconType(type));
                 button.Click += (s, e) => AddTag(type);
                 buttons.Add(type, button);
@@ -903,10 +903,10 @@ namespace NbtStudio.UI
             var good = files.Where(x => !x.item.Failed);
             if (bad.Any())
             {
-                string message = $"{StringUtils.Pluralize(bad.Count(), "file")} failed to load:\n\n";
+                string message = $"{StringUtils.Pluralize(bad.Count(), "file")} 无法加载:\n\n";
                 message += String.Join("\n", bad.Select(x => Path.GetFileName(x.path)));
                 var fail = FailableFactory.Aggregate(bad.Select(x => x.item).ToArray());
-                var window = new ExceptionWindow("Load failure", message, fail);
+                var window = new ExceptionWindow("加载失败", message, fail);
                 window.ShowDialog(this);
             }
             if (good.Any())
@@ -919,16 +919,16 @@ namespace NbtStudio.UI
 
         private void Folder_FilesFailed(object sender, IEnumerable<(string path, IFailable<IFile> file)> bad)
         {
-            string message = $"{StringUtils.Pluralize(bad.Count(), "file")} failed to load:\n\n";
+            string message = $"{StringUtils.Pluralize(bad.Count(), "file")} 无法加载:\n\n";
             message += String.Join("\n", bad.Select(x => Path.GetFileName(x.path)));
             var fail = FailableFactory.Aggregate(bad.Select(x => x.file).ToArray());
-            var window = new ExceptionWindow("Load failure", message, fail);
+            var window = new ExceptionWindow("加载失败", message, fail);
             window.ShowDialog(this);
         }
 
         private void OpenFolder(string path, bool skip_confirm = false)
         {
-            if (!skip_confirm && !ConfirmIfUnsaved("Open a new folder anyway?"))
+            if (!skip_confirm && !ConfirmIfUnsaved("依然要打开一个新的文件夹吗？"))
                 return;
             OpenPathsLike(new[] { path }, x => ViewModel = new NbtTreeModel(x));
         }
@@ -940,7 +940,7 @@ namespace NbtStudio.UI
 
         private void OpenFiles(IEnumerable<string> paths, bool skip_confirm = false)
         {
-            if (!skip_confirm && !ConfirmIfUnsaved("Open a new file anyway?"))
+            if (!skip_confirm && !ConfirmIfUnsaved("依然要打开一个新的文件夹吗？"))
                 return;
             OpenPathsLike(paths, x => ViewModel = new NbtTreeModel(x));
         }
@@ -962,7 +962,7 @@ namespace NbtStudio.UI
         {
             if (!ViewModel.HasAnyUnsavedChanges)
                 return true;
-            return MessageBox.Show($"You currently have unsaved changes.\n\n{message}", "Unsaved Changes", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
+            return MessageBox.Show($"当前有未保存的更改\n\n{message}", "未保存的更改", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes;
         }
 
         private void NbtTree_SelectionChanged(object sender, EventArgs e)
@@ -1070,13 +1070,13 @@ namespace NbtStudio.UI
             if (destination is null) return;
             UndoHistory.StartBatchOperation();
             destination.ReceiveDrop(nodes, index);
-            UndoHistory.FinishBatchOperation(new DescriptionHolder("Move {0} into {1} at position {2}", nodes, destination, index), true);
+            UndoHistory.FinishBatchOperation(new DescriptionHolder("将 {0} 移动到 {1} 的位置 {2}", nodes, destination, index), true);
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
 #if !DEBUG
-            if (!ConfirmIfUnsaved("Exit anyway?"))
+            if (!ConfirmIfUnsaved("仍然要退出吗？"))
                 e.Cancel = true;
 #endif
         }
@@ -1098,42 +1098,42 @@ namespace NbtStudio.UI
             var file_items = new List<ToolStripItem>();
             var nbt_items = new List<ToolStripItem>();
             if (obj.Parent is ModelRootNode)
-                root_items.Add(new ToolStripMenuItem("&Discard", IconSource.GetImage(IconType.Delete).Image, Discard_Click));
+                root_items.Add(new ToolStripMenuItem("移除", IconSource.GetImage(IconType.Delete).Image, Discard_Click));
             if (e.Node.CanExpand)
             {
                 if (e.Node.IsExpanded)
-                    node_items.Add(new ToolStripMenuItem("&Collapse", null, Collapse_Click));
+                    node_items.Add(new ToolStripMenuItem("收起", null, Collapse_Click));
                 else
-                    node_items.Add(new ToolStripMenuItem("&Expand All", null, ExpandAll_Click));
+                    node_items.Add(new ToolStripMenuItem("展开全部", null, ExpandAll_Click));
                 var children = NbtTree.AllChildren(e.Node);
                 if (children.All(x => x.IsSelected))
-                    node_items.Add(new ToolStripMenuItem("Dese&lect all Children", null, DeselectChildren_Click));
+                    node_items.Add(new ToolStripMenuItem("取消选择所有子项", null, DeselectChildren_Click));
                 else
-                    node_items.Add(new ToolStripMenuItem("Se&lect all Children", null, SelectChildren_Click));
+                    node_items.Add(new ToolStripMenuItem("选择所有子项", null, SelectChildren_Click));
             }
             var saveable = obj.Get<ISaveable>();
             if (saveable is not null && saveable.CanSave)
-                file_items.Add(new ToolStripMenuItem("&Save File", IconSource.GetImage(IconType.Save).Image, Save_Click));
+                file_items.Add(new ToolStripMenuItem("保存文件", IconSource.GetImage(IconType.Save).Image, Save_Click));
             if (obj.Get<IExportable>() is not null)
-                file_items.Add(new ToolStripMenuItem("Save File &As", IconSource.GetImage(IconType.Save).Image, SaveAs_Click));
+                file_items.Add(new ToolStripMenuItem("文件另存为", IconSource.GetImage(IconType.Save).Image, SaveAs_Click));
             var refresh = obj.Get<IRefreshable>();
             if (refresh is not null && refresh.CanRefresh)
-                file_items.Add(new ToolStripMenuItem("&Refresh", IconSource.GetImage(IconType.Refresh).Image, Refresh_Click));
+                file_items.Add(new ToolStripMenuItem("刷新", IconSource.GetImage(IconType.Refresh).Image, Refresh_Click));
             var path = obj.Get<IHavePath>();
             if (path is not null && path.Path is not null)
-                file_items.Add(new ToolStripMenuItem("&Open in Explorer", IconSource.GetImage(IconType.OpenFile).Image, OpenInExplorer_Click));
+                file_items.Add(new ToolStripMenuItem("在文件浏览器中打开", IconSource.GetImage(IconType.OpenFile).Image, OpenInExplorer_Click));
             var container = obj.GetNbtTag() as NbtContainerTag;
             if (container is not null)
             {
                 var addable = NbtUtil.NormalTagTypes().Where(x => container.CanAdd(x));
                 bool single = ListUtils.ExactlyOne(addable);
-                var display = single ? (Func<NbtTagType, string>)(x => $"Add {NbtUtil.TagTypeName(x)} Tag") : (x => $"{NbtUtil.TagTypeName(x)} Tag");
+                var display = single ? (Func<NbtTagType, string>)(x => $"添加{NbtUtil.TagTypeName(x)}标签") : (x => $"{NbtUtil.TagTypeName(x)}标签");
                 var items = addable.Select(x => new ToolStripMenuItem(display(x), NbtUtil.TagTypeImage(IconSource, x).Image, (s, ea) => AddTag_Click(x))).ToArray();
                 if (single)
                     nbt_items.AddRange(items);
                 else
                 {
-                    var add = new ToolStripMenuItem("Add...");
+                    var add = new ToolStripMenuItem("添加...");
                     add.DropDownItems.AddRange(items);
                     nbt_items.Add(add);
                 }
@@ -1265,7 +1265,7 @@ namespace NbtStudio.UI
             DropDownUndoHistory.DropDown = undo_dropdown;
             var undo_actions = new ActionHistory(undo_history,
                 x => { UndoHistory.Undo(x + 1); MenuEdit.HideDropDown(); },
-                x => $"Undo {StringUtils.Pluralize(x + 1, "action")}",
+                x => $"撤销 {StringUtils.Pluralize(x + 1, "action")}",
                 DropDownUndoHistory.Font);
             undo_dropdown.Items.Add(new ToolStripControlHost(undo_actions));
 
@@ -1273,7 +1273,7 @@ namespace NbtStudio.UI
             DropDownRedoHistory.DropDown = redo_dropdown;
             var redo_actions = new ActionHistory(redo_history,
                 x => { UndoHistory.Redo(x + 1); MenuEdit.HideDropDown(); },
-                x => $"Redo {StringUtils.Pluralize(x + 1, "action")}",
+                x => $"重做 {StringUtils.Pluralize(x + 1, "action")}",
                 DropDownRedoHistory.Font);
             redo_dropdown.Items.Add(new ToolStripControlHost(redo_actions));
 
