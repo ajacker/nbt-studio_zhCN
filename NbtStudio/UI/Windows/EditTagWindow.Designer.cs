@@ -63,7 +63,7 @@
             this.WordWrapCheck.Name = "WordWrapCheck";
             this.WordWrapCheck.Size = new System.Drawing.Size(86, 19);
             this.WordWrapCheck.TabIndex = 9;
-            this.WordWrapCheck.Text = "Word Wrap";
+            this.WordWrapCheck.Text = "自动换行";
             this.WordWrapCheck.UseVisualStyleBackColor = true;
             this.WordWrapCheck.Visible = false;
             this.WordWrapCheck.CheckedChanged += new System.EventHandler(this.WordWrapCheck_CheckedChanged);
@@ -77,7 +77,7 @@
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(88, 27);
             this.ButtonOk.TabIndex = 6;
-            this.ButtonOk.Text = "OK";
+            this.ButtonOk.Text = "完成";
             this.ButtonOk.UseVisualStyleBackColor = true;
             this.ButtonOk.Click += new System.EventHandler(this.ButtonOk_Click);
             // 
@@ -91,7 +91,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(88, 27);
             this.ButtonCancel.TabIndex = 7;
-            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             // 
             // MainTable
@@ -122,7 +122,7 @@
             this.ValueLabel.Name = "ValueLabel";
             this.ValueLabel.Size = new System.Drawing.Size(41, 15);
             this.ValueLabel.TabIndex = 3;
-            this.ValueLabel.Text = "Value:";
+            this.ValueLabel.Text = "值:";
             // 
             // ValueBox
             // 
@@ -145,7 +145,7 @@
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(44, 15);
             this.NameLabel.TabIndex = 1;
-            this.NameLabel.Text = "Name:";
+            this.NameLabel.Text = "名称:";
             // 
             // NameBox
             // 
@@ -175,7 +175,7 @@
             this.Name = "EditTagWindow";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Create Tag";
+            this.Text = "创建标签";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.EditTagWindow_FormClosed);
             this.Load += new System.EventHandler(this.EditTagWindow_Load);
             this.ButtonsPanel.ResumeLayout(false);

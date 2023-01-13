@@ -64,7 +64,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(93, 35);
             this.ButtonCancel.TabIndex = 4;
-            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.Visible = false;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -75,7 +75,7 @@
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(93, 35);
             this.ButtonOk.TabIndex = 1;
-            this.ButtonOk.Text = "OK";
+            this.ButtonOk.Text = "好的";
             this.ButtonOk.Click += new System.EventHandler(this.OKButton_Click);
             // 
             // ButtonCopy
@@ -85,7 +85,7 @@
             this.ButtonCopy.Name = "ButtonCopy";
             this.ButtonCopy.Size = new System.Drawing.Size(93, 35);
             this.ButtonCopy.TabIndex = 3;
-            this.ButtonCopy.Text = "Copy";
+            this.ButtonCopy.Text = "复制";
             this.ButtonCopy.Visible = false;
             this.ButtonCopy.Click += new System.EventHandler(this.ButtonCopy_Click);
             // 
@@ -96,7 +96,7 @@
             this.ButtonDetails.Name = "ButtonDetails";
             this.ButtonDetails.Size = new System.Drawing.Size(93, 35);
             this.ButtonDetails.TabIndex = 2;
-            this.ButtonDetails.Text = "More Details";
+            this.ButtonDetails.Text = "展开详情";
             this.ButtonDetails.Click += new System.EventHandler(this.ButtonDetails_Click);
             // 
             // MessageLabel
@@ -106,7 +106,7 @@
             this.MessageLabel.MaximumSize = new System.Drawing.Size(467, 0);
             this.MessageLabel.Name = "MessageLabel";
             this.MessageLabel.Padding = new System.Windows.Forms.Padding(9, 7, 16, 7);
-            this.MessageLabel.Size = new System.Drawing.Size(25, 29);
+            this.MessageLabel.Size = new System.Drawing.Size(25, 36);
             this.MessageLabel.TabIndex = 1;
             // 
             // MessagePanel
@@ -139,13 +139,13 @@
             this.ExtraInfoLabel.Location = new System.Drawing.Point(3, 0);
             this.ExtraInfoLabel.Name = "ExtraInfoLabel";
             this.ExtraInfoLabel.Padding = new System.Windows.Forms.Padding(9, 7, 16, 7);
-            this.ExtraInfoLabel.Size = new System.Drawing.Size(25, 29);
+            this.ExtraInfoLabel.Size = new System.Drawing.Size(25, 36);
             this.ExtraInfoLabel.TabIndex = 2;
             // 
             // ExceptionWindow
             // 
             this.AcceptButton = this.ButtonOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;

@@ -48,9 +48,9 @@ namespace NbtStudio.UI
                 this.Icon = NbtUtil.TagTypeImage(source, tag.TagType).Icon;
             }
             if (purpose == EditPurpose.Create)
-                this.Text = $"Create {tagname} Tag";
+                this.Text = $"创建{tagname}标签";
             else if (purpose == EditPurpose.EditValue || purpose == EditPurpose.Rename)
-                this.Text = $"Edit {tagname} Tag";
+                this.Text = $"编辑{tagname}标签";
 
             if (SettingName && purpose != EditPurpose.EditValue)
             {
@@ -122,9 +122,9 @@ namespace NbtStudio.UI
             long selected_byte = HexBox.SelectionStart;
             long selected_byte2 = HexBox.SelectionStart + HexBox.SelectionLength;
             if (HexBox.SelectionLength > 1)
-                CursorLabel.Text = $"Elements {selected_byte / Provider.BytesPerValue} - {selected_byte2 / Provider.BytesPerValue}";
+                CursorLabel.Text = $"元素 {selected_byte / Provider.BytesPerValue} - {selected_byte2 / Provider.BytesPerValue}";
             else
-                CursorLabel.Text = $"Element {selected_byte / Provider.BytesPerValue}";
+                CursorLabel.Text = $"元素 {selected_byte / Provider.BytesPerValue}";
         }
 
         private void HexBox_CurrentLineChanged(object sender, EventArgs e)

@@ -55,9 +55,9 @@ namespace NbtStudio.UI
             }
             this.Icon = NbtUtil.TagTypeImage(source, tag.TagType).Icon;
             if (purpose == EditPurpose.Create)
-                this.Text = $"Create {NbtUtil.TagTypeName(tag.TagType)} Tag";
+                this.Text = $"创建{NbtUtil.TagTypeName(tag.TagType)}标签";
             else if (purpose == EditPurpose.EditValue || purpose == EditPurpose.Rename)
-                this.Text = $"Edit {NbtUtil.TagTypeName(tag.TagType)} Tag";
+                this.Text = $"编辑{NbtUtil.TagTypeName(tag.TagType)}标签";
 
             if (SettingName && (!SettingValue || purpose != EditPurpose.EditValue))
             {

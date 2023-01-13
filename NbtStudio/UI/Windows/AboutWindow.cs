@@ -50,5 +50,10 @@ namespace NbtStudio.UI
         {
             IOUtils.OpenUrlInBrowser("https://github.com/AmberWat");
         }
+
+        private void InfoLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

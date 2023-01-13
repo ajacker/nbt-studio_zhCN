@@ -23,9 +23,9 @@ namespace NbtStudio.UI
 
             this.Icon = source.GetImage(IconType.Chunk).Icon;
             if (purpose == ChunkEditPurpose.Create)
-                this.Text = $"Create Chunk";
+                this.Text = $"创建区块";
             else if (purpose == ChunkEditPurpose.Move)
-                this.Text = $"Move Chunk";
+                this.Text = $"移动区块";
 
             XBox.Select();
         }

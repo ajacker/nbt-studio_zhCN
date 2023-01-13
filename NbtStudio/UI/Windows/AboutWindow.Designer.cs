@@ -40,9 +40,10 @@
             // ImageBox
             // 
             this.ImageBox.Image = global::NbtStudio.Properties.Resources.nbt_studio_image_256;
-            this.ImageBox.Location = new System.Drawing.Point(12, 12);
+            this.ImageBox.Location = new System.Drawing.Point(22, 22);
+            this.ImageBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ImageBox.Name = "ImageBox";
-            this.ImageBox.Size = new System.Drawing.Size(64, 64);
+            this.ImageBox.Size = new System.Drawing.Size(117, 118);
             this.ImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImageBox.TabIndex = 0;
             this.ImageBox.TabStop = false;
@@ -50,12 +51,13 @@
             // NameLabel
             // 
             this.NameLabel.AutoSize = true;
-            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NameLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.NameLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(102)))), ((int)(((byte)(214)))));
-            this.NameLabel.Location = new System.Drawing.Point(81, 12);
+            this.NameLabel.Location = new System.Drawing.Point(148, 22);
+            this.NameLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.NameLabel.Name = "NameLabel";
-            this.NameLabel.Size = new System.Drawing.Size(142, 24);
+            this.NameLabel.Size = new System.Drawing.Size(214, 32);
             this.NameLabel.TabIndex = 0;
             this.NameLabel.TabStop = true;
             this.NameLabel.Text = "NBT Studio v{0}";
@@ -64,22 +66,25 @@
             // InfoLabel
             // 
             this.InfoLabel.AutoSize = true;
-            this.InfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.InfoLabel.Location = new System.Drawing.Point(81, 46);
+            this.InfoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.InfoLabel.Location = new System.Drawing.Point(148, 85);
+            this.InfoLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.InfoLabel.Name = "InfoLabel";
-            this.InfoLabel.Size = new System.Drawing.Size(161, 96);
+            this.InfoLabel.Size = new System.Drawing.Size(245, 150);
             this.InfoLabel.TabIndex = 1;
-            this.InfoLabel.Text = "Copyright © 2020 tryashtar\r\n\r\nBased on:\r\n\r\n\r\nIcons created by:";
+            this.InfoLabel.Text = "Copyright © 2020 tryashtar\r\n\r\n基于：\r\n\r\n\r\n\r\n图标作者：";
+            this.InfoLabel.Click += new System.EventHandler(this.InfoLabel_Click);
             // 
             // NbtExplorerLabel
             // 
             this.NbtExplorerLabel.AutoSize = true;
-            this.NbtExplorerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NbtExplorerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NbtExplorerLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.NbtExplorerLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(102)))), ((int)(((byte)(214)))));
-            this.NbtExplorerLabel.Location = new System.Drawing.Point(82, 96);
+            this.NbtExplorerLabel.Location = new System.Drawing.Point(150, 177);
+            this.NbtExplorerLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.NbtExplorerLabel.Name = "NbtExplorerLabel";
-            this.NbtExplorerLabel.Size = new System.Drawing.Size(167, 17);
+            this.NbtExplorerLabel.Size = new System.Drawing.Size(231, 25);
             this.NbtExplorerLabel.TabIndex = 2;
             this.NbtExplorerLabel.TabStop = true;
             this.NbtExplorerLabel.Text = "NBTExplorer by jaquadro";
@@ -88,12 +93,13 @@
             // GenericIconLabel
             // 
             this.GenericIconLabel.AutoSize = true;
-            this.GenericIconLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.GenericIconLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.GenericIconLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.GenericIconLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(102)))), ((int)(((byte)(214)))));
-            this.GenericIconLabel.Location = new System.Drawing.Point(82, 142);
+            this.GenericIconLabel.Location = new System.Drawing.Point(150, 262);
+            this.GenericIconLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.GenericIconLabel.Name = "GenericIconLabel";
-            this.GenericIconLabel.Size = new System.Drawing.Size(140, 17);
+            this.GenericIconLabel.Size = new System.Drawing.Size(198, 25);
             this.GenericIconLabel.TabIndex = 3;
             this.GenericIconLabel.TabStop = true;
             this.GenericIconLabel.Text = "Yusuke Kamiyamane";
@@ -102,12 +108,13 @@
             // NbtIconLabel
             // 
             this.NbtIconLabel.AutoSize = true;
-            this.NbtIconLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.NbtIconLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.NbtIconLabel.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline;
             this.NbtIconLabel.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(102)))), ((int)(((byte)(214)))));
-            this.NbtIconLabel.Location = new System.Drawing.Point(82, 159);
+            this.NbtIconLabel.Location = new System.Drawing.Point(150, 294);
+            this.NbtIconLabel.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.NbtIconLabel.Name = "NbtIconLabel";
-            this.NbtIconLabel.Size = new System.Drawing.Size(62, 17);
+            this.NbtIconLabel.Size = new System.Drawing.Size(90, 25);
             this.NbtIconLabel.TabIndex = 4;
             this.NbtIconLabel.TabStop = true;
             this.NbtIconLabel.Text = "AmberW";
@@ -115,9 +122,9 @@
             // 
             // AboutWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(278, 194);
+            this.ClientSize = new System.Drawing.Size(510, 358);
             this.Controls.Add(this.NbtIconLabel);
             this.Controls.Add(this.GenericIconLabel);
             this.Controls.Add(this.NbtExplorerLabel);
@@ -125,12 +132,13 @@
             this.Controls.Add(this.NameLabel);
             this.Controls.Add(this.ImageBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "AboutWindow";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "About NBT Studio";
+            this.Text = "关于 NBT Studio";
             this.Load += new System.EventHandler(this.AboutWindow_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImageBox)).EndInit();
             this.ResumeLayout(false);

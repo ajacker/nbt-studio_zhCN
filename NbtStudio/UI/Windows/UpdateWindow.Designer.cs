@@ -47,7 +47,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 7;
-            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             this.ButtonCancel.Click += new System.EventHandler(this.ButtonCancel_Click);
             // 
@@ -59,7 +59,7 @@
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(75, 23);
             this.ButtonOk.TabIndex = 6;
-            this.ButtonOk.Text = "Update";
+            this.ButtonOk.Text = "更新";
             this.ButtonOk.UseVisualStyleBackColor = true;
             this.ButtonOk.Click += new System.EventHandler(this.ButtonOk_Click);
             // 
@@ -85,7 +85,7 @@
             this.CurrentVersionLabel.Name = "CurrentVersionLabel";
             this.CurrentVersionLabel.Size = new System.Drawing.Size(111, 17);
             this.CurrentVersionLabel.TabIndex = 0;
-            this.CurrentVersionLabel.Text = "Current Version:";
+            this.CurrentVersionLabel.Text = "当前版本:";
             // 
             // AvailableVersionLabel
             // 
@@ -95,7 +95,7 @@
             this.AvailableVersionLabel.Name = "AvailableVersionLabel";
             this.AvailableVersionLabel.Size = new System.Drawing.Size(121, 17);
             this.AvailableVersionLabel.TabIndex = 2;
-            this.AvailableVersionLabel.Text = "Available Version:";
+            this.AvailableVersionLabel.Text = "可用版本:";
             // 
             // ChangelogLabel
             // 
@@ -105,7 +105,7 @@
             this.ChangelogLabel.Name = "ChangelogLabel";
             this.ChangelogLabel.Size = new System.Drawing.Size(76, 17);
             this.ChangelogLabel.TabIndex = 4;
-            this.ChangelogLabel.Text = "Changelog";
+            this.ChangelogLabel.Text = "更新日志";
             // 
             // CurrentVersionValue
             // 
@@ -147,7 +147,7 @@
             this.Name = "UpdateWindow";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Update NBT Studio";
+            this.Text = "更新 NBT Studio ~ 更新过后就和汉化说再见了 ~~";
             this.Load += new System.EventHandler(this.UpdateWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

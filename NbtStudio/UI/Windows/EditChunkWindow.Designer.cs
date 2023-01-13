@@ -62,7 +62,7 @@
             this.ButtonCancel.Name = "ButtonCancel";
             this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
             this.ButtonCancel.TabIndex = 7;
-            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             // 
             // ButtonOk
@@ -73,7 +73,7 @@
             this.ButtonOk.Name = "ButtonOk";
             this.ButtonOk.Size = new System.Drawing.Size(75, 23);
             this.ButtonOk.TabIndex = 6;
-            this.ButtonOk.Text = "OK";
+            this.ButtonOk.Text = "完成";
             this.ButtonOk.UseVisualStyleBackColor = true;
             this.ButtonOk.Click += new System.EventHandler(this.ButtonOk_Click);
             // 
@@ -156,7 +156,7 @@
             this.Name = "EditChunkWindow";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Create Chunk";
+            this.Text = "创建区块";
             this.MainTable.ResumeLayout(false);
             this.MainTable.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ZBox)).EndInit();

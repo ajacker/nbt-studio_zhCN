@@ -45,30 +45,33 @@
             // 
             this.ButtonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.ButtonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.ButtonCancel.Location = new System.Drawing.Point(103, 147);
+            this.ButtonCancel.Location = new System.Drawing.Point(240, 271);
+            this.ButtonCancel.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ButtonCancel.Name = "ButtonCancel";
-            this.ButtonCancel.Size = new System.Drawing.Size(75, 23);
+            this.ButtonCancel.Size = new System.Drawing.Size(138, 42);
             this.ButtonCancel.TabIndex = 8;
-            this.ButtonCancel.Text = "Cancel";
+            this.ButtonCancel.Text = "取消";
             this.ButtonCancel.UseVisualStyleBackColor = true;
             // 
             // ButtonOk
             // 
             this.ButtonOk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.ButtonOk.Location = new System.Drawing.Point(22, 147);
+            this.ButtonOk.Location = new System.Drawing.Point(91, 271);
+            this.ButtonOk.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ButtonOk.Name = "ButtonOk";
-            this.ButtonOk.Size = new System.Drawing.Size(75, 23);
+            this.ButtonOk.Size = new System.Drawing.Size(138, 42);
             this.ButtonOk.TabIndex = 7;
-            this.ButtonOk.Text = "OK";
+            this.ButtonOk.Text = "完成";
             this.ButtonOk.UseVisualStyleBackColor = true;
             this.ButtonOk.Click += new System.EventHandler(this.ButtonOk_Click);
             // 
             // RadioSnbt
             // 
             this.RadioSnbt.AutoSize = true;
-            this.RadioSnbt.Location = new System.Drawing.Point(12, 89);
+            this.RadioSnbt.Location = new System.Drawing.Point(22, 164);
+            this.RadioSnbt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RadioSnbt.Name = "RadioSnbt";
-            this.RadioSnbt.Size = new System.Drawing.Size(54, 17);
+            this.RadioSnbt.Size = new System.Drawing.Size(81, 28);
             this.RadioSnbt.TabIndex = 4;
             this.RadioSnbt.Text = "SNBT";
             this.RadioSnbt.UseVisualStyleBackColor = true;
@@ -76,9 +79,10 @@
             // RadioNbt
             // 
             this.RadioNbt.AutoSize = true;
-            this.RadioNbt.Location = new System.Drawing.Point(12, 12);
+            this.RadioNbt.Location = new System.Drawing.Point(22, 22);
+            this.RadioNbt.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.RadioNbt.Name = "RadioNbt";
-            this.RadioNbt.Size = new System.Drawing.Size(47, 17);
+            this.RadioNbt.Size = new System.Drawing.Size(71, 28);
             this.RadioNbt.TabIndex = 0;
             this.RadioNbt.Text = "NBT";
             this.RadioNbt.UseVisualStyleBackColor = true;
@@ -87,38 +91,42 @@
             // CheckMinify
             // 
             this.CheckMinify.AutoSize = true;
-            this.CheckMinify.Location = new System.Drawing.Point(75, 90);
+            this.CheckMinify.Location = new System.Drawing.Point(138, 166);
+            this.CheckMinify.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CheckMinify.Name = "CheckMinify";
-            this.CheckMinify.Size = new System.Drawing.Size(53, 17);
+            this.CheckMinify.Size = new System.Drawing.Size(108, 28);
             this.CheckMinify.TabIndex = 5;
-            this.CheckMinify.Text = "Minify";
+            this.CheckMinify.Text = "缩简文本";
             this.CheckMinify.UseVisualStyleBackColor = true;
             // 
             // CheckLittleEndian
             // 
             this.CheckLittleEndian.AutoSize = true;
-            this.CheckLittleEndian.Location = new System.Drawing.Point(75, 38);
+            this.CheckLittleEndian.Location = new System.Drawing.Point(138, 70);
+            this.CheckLittleEndian.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CheckLittleEndian.Name = "CheckLittleEndian";
-            this.CheckLittleEndian.Size = new System.Drawing.Size(84, 17);
+            this.CheckLittleEndian.Size = new System.Drawing.Size(230, 28);
             this.CheckLittleEndian.TabIndex = 2;
-            this.CheckLittleEndian.Text = "Little-Endian";
+            this.CheckLittleEndian.Text = "小端模式(Little-Endian)";
             this.CheckLittleEndian.UseVisualStyleBackColor = true;
             // 
             // CompressionBox
             // 
             this.CompressionBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CompressionBox.FormattingEnabled = true;
-            this.CompressionBox.Location = new System.Drawing.Point(75, 11);
+            this.CompressionBox.Location = new System.Drawing.Point(138, 20);
+            this.CompressionBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CompressionBox.Name = "CompressionBox";
-            this.CompressionBox.Size = new System.Drawing.Size(103, 21);
+            this.CompressionBox.Size = new System.Drawing.Size(186, 32);
             this.CompressionBox.TabIndex = 1;
             // 
             // CheckJson
             // 
             this.CheckJson.AutoSize = true;
-            this.CheckJson.Location = new System.Drawing.Point(75, 113);
+            this.CheckJson.Location = new System.Drawing.Point(138, 209);
+            this.CheckJson.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CheckJson.Name = "CheckJson";
-            this.CheckJson.Size = new System.Drawing.Size(54, 17);
+            this.CheckJson.Size = new System.Drawing.Size(83, 28);
             this.CheckJson.TabIndex = 6;
             this.CheckJson.Text = "JSON";
             this.CheckJson.UseVisualStyleBackColor = true;
@@ -126,20 +134,21 @@
             // CheckBedrockHeader
             // 
             this.CheckBedrockHeader.AutoSize = true;
-            this.CheckBedrockHeader.Location = new System.Drawing.Point(75, 61);
+            this.CheckBedrockHeader.Location = new System.Drawing.Point(138, 113);
+            this.CheckBedrockHeader.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.CheckBedrockHeader.Name = "CheckBedrockHeader";
-            this.CheckBedrockHeader.Size = new System.Drawing.Size(104, 17);
+            this.CheckBedrockHeader.Size = new System.Drawing.Size(180, 28);
             this.CheckBedrockHeader.TabIndex = 3;
-            this.CheckBedrockHeader.Text = "Bedrock Header";
+            this.CheckBedrockHeader.Text = "使用基岩版头格式";
             this.CheckBedrockHeader.UseVisualStyleBackColor = true;
             // 
             // ExportWindow
             // 
             this.AcceptButton = this.ButtonOk;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.ButtonCancel;
-            this.ClientSize = new System.Drawing.Size(190, 182);
+            this.ClientSize = new System.Drawing.Size(399, 336);
             this.Controls.Add(this.CheckBedrockHeader);
             this.Controls.Add(this.CheckJson);
             this.Controls.Add(this.CompressionBox);
@@ -151,11 +160,12 @@
             this.Controls.Add(this.ButtonOk);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ExportWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Export Settings";
+            this.Text = "导出设置";
             this.ResumeLayout(false);
             this.PerformLayout();
 

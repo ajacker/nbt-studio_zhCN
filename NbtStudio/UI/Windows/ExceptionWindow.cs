@@ -57,7 +57,7 @@ namespace NbtStudio.UI
                 ExtraInfoPanel.Height = 300;
                 this.Width += 130 + ButtonCopy.Width;
                 ExtraInfoPanel.Visible = true;
-                ButtonDetails.Text = "Less Details";
+                ButtonDetails.Text = "折叠详情";
                 ButtonCopy.Visible = true;
             }
             else
@@ -66,7 +66,7 @@ namespace NbtStudio.UI
                 ExtraInfoPanel.Height = 300;
                 this.Height -= ExtraInfoPanel.Height;
                 this.Width -= 130 + ButtonCopy.Width;
-                ButtonDetails.Text = "More Details";
+                ButtonDetails.Text = "展示详情";
                 ButtonCopy.Visible = false;
             }
         }
