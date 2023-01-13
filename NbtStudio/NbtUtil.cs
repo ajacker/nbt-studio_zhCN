@@ -279,11 +279,29 @@ namespace NbtStudio
         public static string TagTypeName(NbtTagType type)
         {
             if (type == NbtTagType.ByteArray)
-                return "Byte Array";
+                return "字节型数组";
             if (type == NbtTagType.IntArray)
-                return "Int Array";
+                return "整型数组";
             if (type == NbtTagType.LongArray)
-                return "Long Array";
+                return "长整型数组";
+            if (type == NbtTagType.Byte)
+                return "字节型";
+            if (type == NbtTagType.Short)
+                return "短整型";
+            if (type == NbtTagType.Int)
+                return "整型";
+            if (type == NbtTagType.Long)
+                return "长整型";
+            if (type == NbtTagType.Float)
+                return "单精度浮点型";
+            if (type == NbtTagType.Double)
+                return "双精度浮点型";
+            if (type == NbtTagType.String)
+                return "字符串";
+            if (type == NbtTagType.Compound)
+                return "复合";
+            if (type == NbtTagType.List)
+                return "列表";
             return type.ToString();
         }
 
