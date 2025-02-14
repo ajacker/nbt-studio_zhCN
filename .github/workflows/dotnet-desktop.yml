@@ -16,10 +16,8 @@ jobs:
     runs-on: windows-latest  # 使用 Windows 环境
 
     env:
-      Solution_Name: NbtStudio/NbtStudio.csproj  # 替换为你的解决方案或项目文件名称
-      Test_Project_Path: NbtStudioTests/NbtStudioTests.csproj  # 替换为你的测试项目路径（如果有）
+      Solution_Name: NbtStudio/NbtStudio.csproj  # 替换为你的可执行项目文件名称
       Wap_Project_Directory: publish  # 发布目录
-      Wap_Project_Path: publish/NbtStudio  # 发布路径
 
     steps:
       - name: Checkout
@@ -42,7 +40,7 @@ jobs:
         run: dotnet build --configuration ${{ matrix.configuration }} --no-restore  # 构建项目
 
       - name: Publish as Single File
-        run: dotnet publish --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }} -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true  # 发布为单个文件
+        run: dotnet publish ${{ env.Solution_Name }} --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }} -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:RuntimeIdentifier=win-x64  # 发布为单个文件
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4  # 上传构建产物
