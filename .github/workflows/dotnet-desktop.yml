@@ -1,0 +1,51 @@
+name: .NET Core Desktop
+
+on:
+  push:
+    branches: [ "main" ]  # 触发构建的分支
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        configuration: [Debug, Release]  # 构建配置（Debug 或 Release）
+
+    runs-on: windows-latest  # 使用 Windows 环境
+
+    env:
+      Solution_Name: NbtStudio.csproj  # 替换为你的解决方案或项目文件名称
+      Test_Project_Path: NbtStudioTests/NbtStudioTests.csproj  # 替换为你的测试项目路径（如果有）
+      Wap_Project_Directory: publish  # 发布目录
+      Wap_Project_Path: publish/NotStudio  # 发布路径
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4  # 拉取代码
+
+      - name: Install .NET Core
+        uses: actions/setup-dotnet@v4  # 安装 .NET SDK
+        with:
+          dotnet-version: '6.0.x'  # 设置 .NET 版本
+
+      - name: Setup MSBuild.exe
+        uses: microsoft/setup-msbuild@v2  # 设置 MSBuild
+
+      - name: Restore dependencies
+        run: dotnet restore  # 还原 NuGet 包
+
+      - name: Build
+        run: dotnet build --configuration ${{ matrix.configuration }} --no-restore  # 构建项目
+
+      - name: Test
+        run: dotnet test --no-build --verbosity normal  # 运行单元测试（如果有）
+
+      - name: Publish
+        run: dotnet publish --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }}  # 发布项目
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4  # 上传构建产物
+        with:
+          name: MSIX Package
+          path: ${{ env.Wap_Project_Directory }}
