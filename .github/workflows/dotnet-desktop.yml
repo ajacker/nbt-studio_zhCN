@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest  # 使用 Windows 环境
 
     env:
-      Solution_Name: NbtStudio.csproj  # 替换为你的解决方案或项目文件名称
+      Solution_Name: NbtStudio/NbtStudio.csproj  # 替换为你的解决方案或项目文件名称
       Test_Project_Path: NbtStudioTests/NbtStudioTests.csproj  # 替换为你的测试项目路径（如果有）
       Wap_Project_Directory: publish  # 发布目录
       Wap_Project_Path: publish/NbtStudio  # 发布路径
