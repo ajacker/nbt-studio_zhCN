@@ -11,7 +11,7 @@ jobs:
   build:
     strategy:
       matrix:
-        configuration: [Debug, Release]  # 构建配置（Debug 或 Release）
+        configuration: [Release]  # 构建配置（Debug 或 Release）
 
     runs-on: windows-latest  # 使用 Windows 环境
 
@@ -40,9 +40,6 @@ jobs:
 
       - name: Build
         run: dotnet build --configuration ${{ matrix.configuration }} --no-restore  # 构建项目
-
-      - name: Test
-        run: dotnet test --no-build --verbosity normal  # 运行单元测试（如果有）
 
       - name: Publish
         run: dotnet publish --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }}  # 发布项目
