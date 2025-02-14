@@ -41,11 +41,11 @@ jobs:
       - name: Build
         run: dotnet build --configuration ${{ matrix.configuration }} --no-restore  # 构建项目
 
-      - name: Publish
-        run: dotnet publish --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }}  # 发布项目
+      - name: Publish as Single File
+        run: dotnet publish --configuration ${{ matrix.configuration }} --output ${{ env.Wap_Project_Directory }} -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true  # 发布为单个文件
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4  # 上传构建产物
         with:
-          name: MSIX Package
+          name: SingleFileExe
           path: ${{ env.Wap_Project_Directory }}
